@@ -104,4 +104,6 @@ theme: auto
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'git'
+  repo: 
+    github: git@github.com: joyblogtc/joyblogtc.github.io.git
