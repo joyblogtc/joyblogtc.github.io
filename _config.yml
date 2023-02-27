@@ -101,7 +101,7 @@ theme: auto
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: 'git'
-  repo: 
-    github: git@github.com:joyblogtc/joyblogtc.github.io.git
+  type: ''
