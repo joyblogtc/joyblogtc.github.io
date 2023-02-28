@@ -106,7 +106,9 @@ theme: auto
 deploy:
   type: 'git'
   repo: 
-    github: git@github.com:joyblogtc/joyblogtc.github.io.git
+    github: https://github.com/joyblogtc/joyblogtc.github.io.git
+  branch: main
+    # github: git@github.com:joyblogtc/joyblogtc.github.io.git
 # deploy:
 #   type: git
 #   repo: https://github.com/joyblogtc/joyblogtc.github.io.git
