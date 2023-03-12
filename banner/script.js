@@ -11,11 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-   btnReject.addEventListener("click", function (e) {
-      e.preventDefault();
-      hideInfobar();
-    });
-
   //listen for the click event on Accept button
   btnAccept.addEventListener("click", function (e) {
     e.preventDefault();
@@ -51,5 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       gtag('config', 'G-CBJDNTG257');
    }
+
+   btnReject.addEventListener("click", function (e) {
+    e.preventDefault();
+    hideInfobar();
+  });
+
 
 });
