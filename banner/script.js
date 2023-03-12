@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //listen for the click event on Accept button
   btnAccept.addEventListener("click", function (e) {
     e.preventDefault();
-    hideInfobar();
     saveAcceptInCookies();
+    hideInfobar();
   });
 
   //hide cookie info bar
