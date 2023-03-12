@@ -1,0 +1,110 @@
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483645;
+    box-sizing: border-box;
+    width: 100%;
+  
+    background-color: #F1F6F4;
+  }
+  
+  .cookie-consent-banner__inner {     
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 0;
+  }
+
+  @media only screen and (max-width: 1240px) {
+    .cookie-consent-banner__inner {
+      margin-left: 13%;
+      margin-right: 13%;
+    }
+  }
+
+  @media only screen and (max-width: 740px) {
+    .cookie-consent-banner__inner {
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .cookie-consent-banner__inner {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+  
+  .cookie-consent-banner__copy { 
+    margin-bottom: 16px;
+  }
+  
+  .cookie-consent-banner__actions {    
+  }
+  
+  .cookie-consent-banner__header {
+    margin-bottom: 8px;
+    
+    font-family: "CeraPRO-Bold", sans-serif, arial;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .cookie-consent-banner__description {
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    color: #838F93;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .cookie-consent-banner__cta {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 164px;
+    padding: 11px 13px;
+      
+    border-radius: 2px;
+    
+    background-color: #ffca2c;
+     
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: "CeraPRO-Regular", sans-serif, arial;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .cookie-consent-banner__cta--secondary { 
+    padding: 9px 13px;
+    
+    border: 2px solid #c5d0bb;
+    
+    background-color: transparent;
+    
+    color: #ffca2c;
+  }
+  
+  .cookie-consent-banner__cta:hover {
+    background-color: #b3bb22;
+  }
+  
+  .cookie-consent-banner__cta--secondary:hover {
+    border-color: #8a9383;
+      
+    background-color: transparent;
+    
+    color: #ffca2c;
+  }
+  
+  .cookie-consent-banner__cta:last-child {
+    margin-left: 16px;
+  }
+
+  .cookies-consent-banner_accepted {
+    display: none;
+  }
