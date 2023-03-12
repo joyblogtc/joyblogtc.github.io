@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   var infoBar = document.querySelector(".cookie-consent-banner");
   var btnAccept = document.querySelector(".cookie-consent-banner__cta");
-  // var btnReject = document.querySelector(".cookie-consent-banner__cta--secondary");
+   var btnReject = document.querySelector(".cookie-consent-banner__cta--secondary");
 
 
   // Check if user has already accepted the notification
@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  // btnReject.addEventListener("click", function (e) {
-  //    e.preventDefault();
-  //    hideInfobar();
-  //  });
+   btnReject.addEventListener("click", function (e) {
+      e.preventDefault();
+      hideInfobar();
+    });
 
   //listen for the click event on Accept button
   btnAccept.addEventListener("click", function (e) {
