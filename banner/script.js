@@ -30,6 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // // get cookie
    function checkCookie () {
+      var name = "cookieInfoHidden=";
+      var cookies = document.cookie.split(';');
+
+      for(var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i];
+          while (cookie.charAt(0)==' ') {
+            cookie = cookie.substring(1);
+          }
+
+          if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length, cookie.length);
+          }
+      }
       return "";
    };
 
@@ -40,16 +53,31 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(imported);
 
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
+    
       gtag('config', 'G-CBJDNTG257');
+
+      setBannerExpiry(3);
+
    }
+
+   function setBannerExpiry(daysOfValidity){
+    var now = new Date();
+    var time = now.getTime() + (daysOfValidity * 24 * 60 * 60 * 1000);
+    var newTime = new Date(now.setTime(time));
+    
+    newTime = newTime.toUTCString();
+    
+    document.cookie = "cookieInfoHidden=1; expires=" + newTime + "; path=/";
+   }
+
 
    btnReject.addEventListener("click", function (e) {
     e.preventDefault();
     hideInfobar();
+    setBannerExpiry(3);
   });
 
 
