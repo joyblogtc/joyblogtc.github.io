@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
       gtag('config', 'G-CBJDNTG257');
 
-      setBannerExpiry(3);
-
+      //Expiry days = 30 days
+      setBannerExpiry(30);
    }
 
    function setBannerExpiry(daysOfValidity){
@@ -77,7 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
    btnReject.addEventListener("click", function (e) {
     e.preventDefault();
     hideInfobar();
-    setBannerExpiry(3);
+    //Expiry days = 1 day
+    setBannerExpiry(1);
   });
 
 
